@@ -12,7 +12,7 @@ export const HeroCard = ({
     characters, //PROPIERTIES
 }) => {
 
-  const heroImageUrl = `/assets/heroes/${id}.jpg`;
+  const heroImageUrl = `${import.meta.env.BASE_URL}assets/heroes/${id}.jpg`;
   const charactersByHero = <p className='text-muted'>{characters}</p>
 
   return (
