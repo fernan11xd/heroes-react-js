@@ -19,7 +19,7 @@ Este proyecto es una Single Page Application (SPA) desarrollada con React.js. Pe
 
 1. Clona el repositorio:
     ```bash
-    git clone 
+    git clone https://github.com/fernan11xd/heroes-react-js
     ```
 2. Instala las dependencias:
     ```bash
