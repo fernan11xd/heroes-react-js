@@ -1,12 +1,20 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { useNavigate } from 'react-router-dom';
+import {AuthContext} from '../context';
 
 export const LoginPage = () => {
 
+  const {login} = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleLogin =  () => {
-        navigate('/*',{
+
+        const lastPath = localStorage.getItem('lastPath') || '/';
+        // Si no hay lastPath, se redirige a la página de inicio
+
+        login('Usuario');
+        
+        navigate(lastPath,{
             replace: true
         });
     }

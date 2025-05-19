@@ -13,6 +13,7 @@ export const HeroCard = ({
 }) => {
 
   const heroImageUrl = `${import.meta.env.BASE_URL}assets/heroes/${id}.jpg`;
+  //const heroImageUrl = `/assets/heroes/${id}.jpg`;
   const charactersByHero = <p className='text-muted'>{characters}</p>
 
   return (

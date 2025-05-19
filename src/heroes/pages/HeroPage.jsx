@@ -24,6 +24,7 @@ export const HeroPage = () => {
       <div className="col-4">
         <img 
           src={`${import.meta.env.BASE_URL}assets/heroes/${id}.jpg`} 
+          // src={`/assets/heroes/${id}.jpg`} 
           alt={hero.superhero} 
           className="img-thumbnail"
         />

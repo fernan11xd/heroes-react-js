@@ -24,6 +24,7 @@ export const SearchPage = () => {
 
   const onSearchSubmit = (event) => {
     event.preventDefault();
+    if (searchText.trim() === q) return; // Si el valor del input es igual al valor del query string, no se hace nada
     //if (searchText.trim().length <= 1) return;
     navigate(`?q=${searchText.toLowerCase().trim()}`);
     onResetForm();
